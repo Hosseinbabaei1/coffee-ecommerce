@@ -1,0 +1,1015 @@
+/* font */
+@font-face {
+    font-family:"Poppins";
+    src: url("/Font/Poppins/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"Poppins Medium";
+    src: url("/Font/Poppins/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"Poppins Bold";
+    src: url("/Font/Poppins/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"Poppins Light";
+    src: url("/Font/Poppins/Poppins/Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"Poppins Italic";
+    src: url("/Font/Poppins/Poppins/Poppins-Italic.ttf") format("truetype");
+}
+
+
+
+/* ------------------------------------------------ Normalize Css ------------------------------------------------*/
+
+
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+
+}
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0; /* 3 */
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+
+
+/* ------------------------------------------------ Start Project ------------------------------------------------ */
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family:"Poppins";
+    background-color: #E9C79A;
+}
+
+.container {
+    min-height: 791px;
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    min-height: 80vh;
+}
+
+
+
+/* ------------------------------------------------ Home ------------------------------------------------ */
+
+
+
+.header{
+
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    
+    background-color: #E9C79A;
+    border-bottom: 1px solid #ffe2bb;
+}
+
+.nav{
+    box-sizing: border-box;
+    align-items: center;    
+}
+
+.nav-logo{
+    font-family:"Poppins";
+    color: black;
+}
+
+.nav-logo__logo{
+    font-size: 1.5rem;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu{
+    display: flex;    
+    list-style-type: none;
+    margin: 0;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu__item{
+    align-items: center;
+}
+
+.menu__item:first-child{
+    background-color: #6E4B35;
+    /* border: 2px solid #F4C068; */
+    border-radius: 8px;
+    padding: 8px 8px;
+    align-items: center;
+}
+
+.menu__item:last-child{
+    margin-right: 10px;
+}
+
+.menu__link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu__btn{
+    color: #ffffff;
+    background-color: #6E4B35;
+    border: 2px solid #855d42;
+    border-radius: 8px;
+    height: 38px;
+    align-content: center;
+}
+
+.menu__btn:hover{
+    background-color: #855d42;
+}
+
+.menu__btn_text{
+    display: inline;
+    align-items: center;
+    padding: 0px 8px;
+}
+
+.menu__btn:last-child {
+    background-color: #433024;
+    border: 2px solid #72533e;
+
+}
+
+.menu__btn:last-child:hover{
+    background-color: #35261d;
+    /* border: 3px solid #72533e; */
+
+}
+
+.header-buttom{
+    display: flex;
+    height: 791px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-buttom___left{
+    color: #433024;
+    margin: 50px 0 0 0 ;
+}
+
+.title{
+    font-family: "Poppins";
+    font-size: 20px;
+    margin: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text{
+    margin: 6px 0 12px;
+    font-family: "Poppins Bold";
+    font-size: 45px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.caption{
+    font-size: 21px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 0 20px;
+}
+
+.link{
+    /* margin-top: 1rem; */
+    background-color: #6E4B35;
+    padding: 0.6rem 2rem;
+    border-radius: 8px;
+    /* display: inline; */
+    max-width: 150px;
+}
+
+.link:hover{
+  background-color: rgb(67, 48, 36);
+    
+}
+
+.link-btn{
+    color: #E9C79A;
+    text-decoration: none;
+}
+
+.header-buttom___right{
+    align-items: center;
+}
+
+.poster{
+}
+
+.poster__img{
+    max-width: 507px;
+    min-height: 480px;
+    align-items: center;
+    justify-content: center;
+    /* bottom: 60px; */
+    /* right: 140px; */
+}
+
+
+
+/* ------------------------------------------------  About ------------------------------------------------ */
+
+
+
+.About{
+    
+}
+
+.About-Top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.About-Title{
+    display: flex;
+    gap: 5px;
+}
+
+.About-Title___1{
+    color: #6E4B35;
+    font-family: "Poppins Medium";
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.About-Title___2{
+    color: #ffffff;
+    font-family: "Poppins Medium";
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.About-Bottom{
+    background-color: #F2DFC8;
+    max-width: max-content;
+    max-height: 400px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px 10px 5px;
+}
+
+.About___Left{
+    width: 35%;
+}
+
+.About-img{
+    max-width: 380px;
+    max-height: 380px;
+}
+
+.About-Right{
+    width: 50%;
+}
+
+.About-Right___Title{
+    display: flex;
+    gap: 5px;
+}
+
+.About-Right___Title1{
+    font-family: "Poppins Medium";
+    color: #6E4B35;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.About-Right___Title2{
+    font-family: "Poppins Medium";
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.About-Right___Text{
+    line-height: 20px;
+}
+
+.About-Right___Text1{
+    
+}
+
+.About-Right___Text2{
+    margin-bottom: 30px;
+}
+
+.About-link{
+    background-color: #6E4B35;
+    padding: 0.6rem 2rem;
+    border-radius: 8px;
+    max-width: 150px;
+    text-align: center;
+    text-transform: uppercase;  
+    font-size: 0.9rem;
+}
+
+.About-link:hover{
+  background-color: rgb(67, 48, 36);
+}
+
+.About-link___Text{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+/* ------------------------------------------------  Menu ------------------------------------------------ */
+
+
+
+.Menu{
+    
+}
+
+.Menu-Top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.Menu-Title{
+    display: flex;
+    gap: 5px;
+}
+
+.Menu-Title___1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #6E4B35;
+    font-family: "Poppins Medium";
+}
+
+.Menu-Title___2{
+    font-family: "Poppins Medium";
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+
+.Menu-Main{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Menu-link{
+    background-color: #6E4B35;
+    padding: 0.6rem 2rem;
+    border-radius: 8px;
+    max-width: 150px;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.Menu-link:hover{
+  background-color: rgb(67, 48, 36);
+
+}
+
+.Menu-link___Text{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Menu-Bottom{
+    background-color: #F2DFC8;
+    max-height: 429px;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.Menu-Bottom___other{
+    background-color: #6E4B35;
+    width: 100px;
+    height: 300px;
+
+}
+
+.Menu-other___Title{
+    /* margin-left: 15PX; */
+}
+
+.Menu-Bottom___Products{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    max-height: 420px;
+}
+
+.Menu-Product{
+    /* background-color: #B17948; */ 
+    background: rgb(177,121,72);
+    background: linear-gradient(180deg, rgba(177,121,72,1) 0%, rgba(110,75,53,1) 100%);
+    max-width: 250px;
+    max-height: 280px;
+    border-radius: 15px;
+    padding: 13px;
+}
+
+.Menu-Product:first-child{
+    margin-left: 15px;
+}
+
+.Product____image{
+    max-width: 220px;
+    max-height: 220px;
+    border-radius: 15px;
+    
+}
+
+.Product____Bottom{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: "Poppins Medium";
+    margin: 5px 14px 5px;
+    align-items: center;
+}
+
+.Product1____Bottom____name{
+
+}
+
+.Product1____Bottom____Price{
+
+}
+
+.Menu-Next{
+    /* margin-right: 15px; */
+}
+
+
+
+/* ------------------------------------------------  Products ------------------------------------------------ */
+
+
+/* کانتینر اصلی محصولات */
+.product-container {
+  
+}
+
+/* استایل عنوان و توضیحات */
+.products-header {
+  margin-bottom: 20px;
+}
+
+.products-header___top{
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.section-title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #6E4B35;
+    font-family: "Poppins Medium";
+    /* text-transform: uppercase;   */
+}
+
+.products-header___bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-header___bottom____left{
+
+}
+
+.section-description {
+    font-size: 1rem;
+}
+
+.section-description-other___link{
+    text-decoration: none;
+    color: #433024;
+    margin: 10px 0;
+}
+
+.section-description-other{
+    margin:0;
+    color: #6F4C35;
+}
+
+.products-header___bottom____right{
+
+}
+
+/* دکمه بالایی */
+.other-products-btn {
+  background-color: #6E4B35;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.other-products-btn:hover {
+  background-color: #433024;
+}
+
+.Products-cards{
+    display: flex;
+}
+
+/* کارت محصولات */
+.product-card {
+    background: rgb(177,121,72);
+    background: linear-gradient(180deg, rgba(177,121,72,1) 0%, rgba(110,75,53,1) 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* display: inline-block; */
+    margin: 5px;
+    padding: 15px;
+    max-width: 200px;
+    min-height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product-card___top{
+
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card___bottom{
+
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 5px 0;
+}
+
+.product-body {
+  font-size: 1rem;
+  color: #e9d6c7;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* دکمه خرید */
+.buy-button {
+  background-color: #E0B673;
+  color: #fff;
+  border: none;
+  padding: 5px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  min-width: 100%;
+  max-width:100%;
+}
+
+.buy-button:hover {
+  background-color: #433024;
+  /* border: 2px solid #72533e; */
+}
+
+
+
+/* ------------------------------------------------  Review ------------------------------------------------ */
+
+
+
+.Review{
+
+}
+
+.Review-top{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.Review-top___tilte1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #6E4B35;
+    font-family: "Poppins Medium";
+}
+
+.Review-top___tilte2{
+    font-family: "Poppins Medium";
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+
+}
+
+.Review-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.reviews{
+    display:flex;
+    /* justify-content:space-between; */
+    gap: 20px;
+}
+
+.review-card{
+    max-width: 360px;
+    max-height: 430px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    background: rgb(177,121,72);
+    background: linear-gradient(180deg, rgba(177,121,72,1) 0%, rgba(110,75,53,1) 100%);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.review-card___title{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.review-card___text{
+    font-size: 1rem;
+    text-align:left;
+    margin-bottom: 3rem;
+}
+
+.profile{
+}
+
+.profile-img{
+    border-radius: 100px;
+    size: 10px;
+
+}
+
+.profile-name{
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.profile-stars{
+    color: #F4C068;
+    font-weight:bolder;
+    gap: 5px;
+}
+
+
+
+/* ------------------------------------------------  Contact Us ------------------------------------------------ */
+
+
+
+.contact{
+
+}
+.contact-top{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+.contact-top___tilte1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #6E4B35;
+    font-family: "Poppins Medium";
+}
+.contact-top___tilte2{
+    font-family: "Poppins Medium";
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+.contact-bottom{
+    background: rgb(177,121,72);
+    background: linear-gradient(180deg, rgba(177,121,72,1) 0%, rgba(110,75,53,1) 100%);
+    color: #ffffff;
+    min-height: 400px;
+    max-height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+
+}
+
+.contact-section-head{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-title{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.contact-section-form{
+
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.form-input{
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    max-width: 100%;
+    display: block;
+    margin: 10px 20px;
+    padding: 20px 10px;
+    background: none;
+    outline: none;
+    color: #fff;
+}
+
+.form-input:hover{
+    outline: none;
+}
+
+.form-input::placeholder{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+
+/* ------------------------------------------------  Foter ------------------------------------------------ */
+
+
+
+.footer{
+
+}
+.container-footer{
+    /* max-width: 80rem;*/
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    /* padding-right: 128px; */
+    /* padding-left: 128px; */
+    min-height: 110px ;
+    background-color: #F2DFC8;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    margin: 0;
+    padding: 0 125px; 
+}
+.footer-caption{
+
+}
+.footer-caption-text{
+    font-size: 0.8rem;
+    width: 600px;
+    margin: 0;
+}
+.footer-links{
+
+}
+.footer-Copyright{
+
+}
+.Copyright{
+    font-size: 0.8rem;
+}
+.footer-btn-mov{
+    width: 35px;
+    height: 35px;
+    background-color: #35261d;
+    border-radius: 8px;
+    /*position: fixed;
+    bottom: 40px;
+    right: 50px;*/
+}
+.btn-mov{
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;*/
+}
+
+.btn-mover{
+    /* margin: 1px; */
+}
