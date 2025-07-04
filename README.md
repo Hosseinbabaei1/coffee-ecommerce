@@ -38,4 +38,4 @@ This website is in progress. The foundational HTML structure, CSS styling, and J
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/coffee-ecommerce.git
+   git clone https://github.com/Hosseinbabaei1/coffee-ecommerce.git
